@@ -1,5 +1,1 @@
-{
-  "version": 2,
-  "functions": { "api/app.js": { "regions": ["iad1"], "maxDuration": 10 } },
-  "routes": [{ "src": "/(.*)", "dest": "api/app.js" }]
-}
+{ "version": 2, "routes": [{ "src": "/(.*)", "dest": "/api/app.js" }] }

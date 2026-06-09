@@ -1,5 +1,5 @@
 {
   "version": 2,
   "functions": { "app/api/app.js": { "runtime": "@vercel/node" } },
-  "routes": [{ "src": "/(.*)", "dest": "/api" }]
+  "routes": [{ "src": "/(.*)", "dest": "app/api/app.js" }]
 }

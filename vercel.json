@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "functions": { "app/app.js": {} },
+  "functions": { "app/app.js": { "runtime": "nodejs24.x" } },
   "routes": [{ "src": "/(.*)", "dest": "app/app.js" }]
 }

@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 html{
@@ -18,7 +19,7 @@ body{
     padding:20px;
     display:flex;
     justify-content:space-between;
-    box-shadow:0px 1px 4px -4px black;
+    box-shadow:0px 1px 4px -4px rgb(129, 93, 0);
     position:fixed;
     top:0;
     left:0;
@@ -27,13 +28,14 @@ body{
 }
 
 .contentLogo h1{
-    color:grey;
+    color:rgb(129, 93, 0);
 }
 
 .contentLinks{
     display:flex;
     gap:20px;
 }
+.contentLinks p{}
 
 .contentLinks p{
     font-size:21px;
@@ -42,7 +44,7 @@ body{
 }
 
 .contentLinks p:hover{
-    color:gray;
+    color:rgb(129, 93, 0);
 }
 
 /* SCROLL POR PANTALLAS */
@@ -53,24 +55,26 @@ body{
 .section{
     height:100vh;
     display:flex;
+    flex-direction: column;
     justify-content:center;
     align-items:center;
     scroll-snap-align:start;
-    font-size:50px;
+    padding-inline: 10px;
 }
 
 .section1{
-    background:#f1f1f1;
+    background:#ffffff;
 }
 
 .section2{
-    background:#d6e4ff;
+    background:#ffffff;
 }
 
 .section3{
-    background:#c8ffd4;
+    background:#ffffff;
 }
 
 .section4{
     background:#ffd6d6;
 }
+

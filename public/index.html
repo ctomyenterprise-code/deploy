@@ -1,45 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demostracion Web</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_dev.css" />
+  </head>
+  <body>
     <div class="contentNav">
-        <div class="contentLogo">
-            <h1>Logo</h1>
-        </div>
-         <div class="contentLinks">
-                <p>
-                    Inicio
-                </p>
-                <p>
-                    Proyectos
-                </p>
-                <p>Contacto</p>
-                <p>Acerca de</p>
-            </div>
+      <div class="contentLogo">
+        <h1>Logo</h1>
+      </div>
+      <div class="contentLinks">
+        <p>Inicio</p>
+        <p>Proyectos</p>
+        <p>Contacto</p>
+        <p>Acerca de</p>
+      </div>
     </div>
-   
+
     <div class="containerSections">
-        <section class="section section1">
-            <h1>Inicio</h1>
-        </section>
+      <section class="section section1" id="inicio">
+        <div class="header-seccion">
+          <div>
+            <span class="title"> Hacemos realidad<br>el evento de tus sueños.</span>
+            <br />
+            <span class="subtittle"
+              >Creamos ambientes únicos para bodas, cumpleaños, graduaciones,
+              eventos corporativos y ocasiones especiales..</span
+            >
+          </div>
+        </div>
+        <div class="contentCategorias"></div>
+        <div class="grid-view">
+          <div
+            class="card"
+            style="
+              background: url(./assets/evento1.jpg) center/cover no-repeat;
+            ">
+            <div class="headercard"><span></span></div>
+            <div class="bodycard">
+              <button>Solicitar</button>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background: url(./assets/evento2.jpg) center/cover no-repeat;
+            ">
+            <div class="headercard"></div>
+            <div class="bodycard">
+              <div class="bodycard">
+                <button>Solicitar</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background: url(./assets/evento3.jpg) center/cover no-repeat;
+            ">
+            <div class="headercard"></div>
+            <div class="bodycard">
+              <div class="bodycard">
+                <button>Solicitar</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background: url(./assets/evento4.webp) center/cover no-repeat;
+            ">
+            <div class="headercard"></div>
+            <div class="bodycard">
+              <div class="bodycard">
+                <button>Solicitar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section2" id="proyectos">
+        <div class="contentCardInfo">
+            
+          <div class="contentInfo">
+            <p>Evento Floral Elegante</p>
+             <br>
+            <p>Sumérgete en un ambiente lleno de belleza,
+            color y armonía con nuestra decoración floral exclusiva. Diseñamos
+            espacios únicos donde las flores se convierten en las protagonistas,
+            creando una experiencia visual encantadora para celebrar momentos
+            especiales. Cada arreglo es cuidadosamente elaborado para transmitir
+            elegancia, frescura y emoción, transformando cualquier evento en un
+            recuerdo inolvidable.</p>
+          </div>
+          <div class="contentImg">
+            <img src="./assets/evento1.jpg" />
+          </div>
+        </div>
+      </section>
 
-        <section class="section section2">
-            <h1>Proyectos</h1>
-        </section>
+      <section class="section section3" id="contactos">
+         <div class="grid-view-contact">
+            <div class="cardContact">
+                <div class="contentTittle">
+                    <img src="./assets/phone.png">
+                    <p class="tittleCard">
+                        LLAMANOS
+                    </p>
+                </div>
+                <div class="contentTel">
+                    <p>+1 (829) 652-62xx4</p>
+                    <p>+1 (829) 652-65xx4</p>
+                </div>
+            </div>
+            <div class="cardContact">
+                <div class="contentTittle">
+                    <img src="./assets/locationsvv.png">
+                    <p class="tittleCard">
+                        UBICACION
+                    </p>
+                </div>
+                <div class="contentTel">
+                    <p>Av. CiudadExample, #21</p>
+                </div>
+            </div>
+            <div class="cardContact">
+                <div class="contentTittle">
+                    <img src="./assets/timevv.png">
+                    <p class="tittleCard">
+                        LLAMANOS
+                    </p>
+                </div>
+                <div class="contentTel">
+                    <p>Lunes a Viernes de 11 a 20 H, Sabados y Domingos de 6 a 20 H</p>   
+                </div>
+            </div>
+         </div>
+      </section>
 
-        <section class="section section3">
-            <h1>Contacto</h1>
-        </section>
-
-        <section class="section section4">
-            <h1>Acerca de</h1>
-
-        </section>
+      <section class="section section4" id="acerca de">
+        <h1>Acerca de</h1>
+      </section>
     </div>
-</body>
+  </body>
 </html>

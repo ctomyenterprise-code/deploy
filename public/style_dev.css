@@ -1,0 +1,180 @@
+.header-seccion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-seccion span{
+    
+    padding-inline: 5px;
+    color: rgb(129, 93, 0);
+}
+.header-seccion .subtittle{
+    font-size: 21px;
+    color: rgb(129, 93, 0);
+}
+.header-seccion .title{
+    font-size: 50px;
+}
+.header-seccion .grid-view{
+
+}
+
+.header-seccion .btn_guia{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-seccion .btn_guia button {
+    outline: none;
+    width: 45px;
+    height: 45px;
+    border: solid 2px rgb(129, 93, 0);
+    border-radius: 50%;
+}
+.header-seccion .btn_guia button.activo{
+    background: rgb(129, 93, 0);
+    color: white;
+}
+.contentCategorias{
+    height: 45px;
+    width: 100%;
+}
+.grid-view{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4,350px);
+    gap: 20px;
+}
+.grid-view .card {
+    color: white;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px -7px rgb(129, 93, 0);
+
+        /* Image Background Properties */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+        justify-content: flex-end; /* Pushes the button to the bottom of the card */
+    align-items: center; /* Centers the button horizontally inside the card */
+    padding: 20px; /* Better padding spacing for the button */
+    box-shadow: 0px 0px 20px -7px rgb(129, 93, 0);
+}
+.grid-view .card button {
+    outline: none;
+    width: 120px;
+    height: 35px;
+    border: solid 2px rgb(129, 93, 0);
+    border-radius: 30px;
+    color: rgb(129, 93, 0);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, 0.8); 
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* animacion */
+      /* ---> ESTADOS DE OCULTADO Y ANIMACIÓN <--- */
+    opacity: 0;                /* Hace el botón invisible */
+    visibility: hidden;        /* Evita que se pueda cliquear por error mientras está oculto */
+    transform: translateY(10px); /* Efecto opcional: el botón subirá ligeramente al aparecer */
+    transition: all ease 0.3s; /* Controla la velocidad de la transición */
+}
+
+.grid-view .card:hover button {
+    opacity: 1;                /* Lo vuelve completamente visible */
+    visibility: visible;       /* Permite interactuar con él */
+    transform: translateY(0);   /* Regresa a su posición original */
+}
+
+.grid-view .card button:hover{
+    background: rgb(129, 93, 0);
+    color: white;
+}
+
+.contentCardInfo{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    background: white;
+    font-size: 19px;
+    width: 90%;
+    justify-content: end;
+}
+.contentCardInfo .contentInfo{
+    width: 100%;
+    padding:40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: #815d00;
+
+}
+.contentCardInfo .contentImg {
+    width: 450px;
+}
+.contentCardInfo img{
+    width: 450px;
+    height: 100%;
+    object-fit: cover;
+}
+.contentCardInfo{
+
+
+}
+.grid-view-contact{
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,300px);
+    gap: 20px;
+}
+.cardContact{
+    background: white;
+    color: #815d00;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px #815d0080;
+    padding:50px 20px; /* Better padding spacing for the button */
+}
+.cardContact {
+    display: flex;
+}
+.cardContact .contentTittle{
+    display: flex;
+    align-items: center;
+}
+.cardContact img {
+    width: 45px;
+    height: 45px;
+}
+.cardContact .tittleCard{
+    letter-spacing: 0.05cm;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cardContact .contentTel {
+    margin-top: 30px;
+    font-size: 17px;
+    letter-spacing: 0.01cm;
+}

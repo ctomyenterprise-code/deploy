@@ -2,9 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-inline: 20px;
 }
 .header-seccion span{
-    
     padding-inline: 5px;
     color: rgb(129, 93, 0);
 }

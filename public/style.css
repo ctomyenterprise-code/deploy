@@ -11,6 +11,7 @@ html{
 
 body{
     overflow-y:scroll;
+    min-width: 1200px;
 }
 
 /* NAVBAR */
@@ -52,7 +53,7 @@ body{
     scroll-snap-type:y mandatory;
 }
 
-.section{
+.section.section1{
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -60,6 +61,15 @@ body{
     align-items:center;
     scroll-snap-align:start;
     padding-inline: 10px;
+}
+.section{
+        height:50vh;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        scroll-snap-align:start;
+        padding-inline: 10px;
 }
 
 .section1{
@@ -75,6 +85,6 @@ body{
 }
 
 .section4{
-    background:#ffd6d6;
+    background:#ffffff;
 }
 

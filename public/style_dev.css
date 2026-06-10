@@ -178,3 +178,33 @@
     font-size: 17px;
     letter-spacing: 0.01cm;
 }
+
+.divider{
+    background: #815d00;
+    width: 80%;
+    height: 1px;
+}
+
+.contentInfoAcercade{
+
+    background: white;
+    color: #815d00;
+    width: 60%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px #815d0080;
+    padding:50px 20px; /* Better padding spacing for the button */
+
+    align-items: center;    
+    justify-content: space-between;
+
+}
+
+.contentsocialred{
+    display: flex;
+}
+.contentsocialred .contentContactRedSocial img{
+    width: 55px;
+    height: 55px;
+}

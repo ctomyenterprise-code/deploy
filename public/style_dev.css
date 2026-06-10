@@ -207,3 +207,10 @@
     width: 55px;
     height: 55px;
 }
+.contentsocialred .contentContactRedSocialP{
+transition: all ease 0.3ms;
+}
+.contentsocialred .contentContactRedSocialP:hover
+{
+    transform: scale(1.1);
+}

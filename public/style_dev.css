@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-inline: 20px;
+    padding-inline: 40px;
 }
 .header-seccion span{
     padding-inline: 5px;

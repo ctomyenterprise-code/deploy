@@ -68,6 +68,10 @@
     align-items: center; /* Centers the button horizontally inside the card */
     padding: 20px; /* Better padding spacing for the button */
     box-shadow: 0px 0px 20px -7px rgb(129, 93, 0);
+    transition: all ease 0.2s; /* Controla la velocidad de la transición */
+}
+.grid-view .card:hover{
+    transform: scale(1.03);
 }
 .grid-view .card button {
     outline: none;
@@ -197,7 +201,6 @@
 
     align-items: center;    
     justify-content: space-between;
-
 }
 
 .contentsocialred{
@@ -208,7 +211,7 @@
     height: 55px;
 }
 .contentsocialred .contentContactRedSocial{
-transition: all ease 0.3s;
+    transition: all ease 0.3s;
 }
 .contentsocialred .contentContactRedSocial:hover
 {

@@ -1,7 +1,7 @@
 /* ==========================================================================
    MEDIA QUERY PARA MÓVILES (Pantallas de hasta 768px)
    ========================================================================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)  {
 
 .contentLinks p{
     font-size: 18px;
@@ -92,3 +92,114 @@
     gap: 10px;
   }
 }
+
+
+/* //// responsive 320px */
+
+/* ==========================================================================
+   MEDIA QUERY PARA MÓVILES (Pantallas de hasta 520px)
+   ========================================================================== */
+@media screen and (max-width: 520px)    {
+
+    .contentLinks{
+        opacity: 0;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        right: 0;
+        background: white;
+    }
+
+.contentLinks p{
+    font-size: 12px;
+    padding: 5px;
+}
+
+  /* --- 1. SECCIÓN INICIO --- */
+  .header-seccion {
+    flex-direction: column; /* Apila el título y los botones si los hay */
+    gap: 20px;
+    padding-inline: 20px; /* Reduce espacio a los lados */
+    text-align: center;
+  }
+
+  .header-seccion .title {
+    /* Reduce el tamaño de letra gigante de 50px */
+    /* font-size: 32px;  */
+  }
+
+  .header-seccion .subtittle {
+    font-size: 16px; /* Ajusta el subtítulo */
+  }
+
+  .grid-view {
+    /* Cambia las 4 columnas fijas de 350px por filas de 1 sola columna flexible */
+    grid-template-columns: 1fr; 
+    padding-inline: 20px;
+  }
+
+  .grid-view .card {
+    height: 320px; /* Reduce un poco la altura para que no ocupe toda la pantalla */
+  }
+
+  /* Desactivar hover de botón en móviles para que sea visible al tocar */
+  .grid-view .card button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+
+  /* --- 2. SECCIÓN PROYECTOS (Evento Floral) --- */
+  .contentCardInfo {
+    flex-direction: column-reverse; /* Pone la imagen arriba y el texto abajo */
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contentCardInfo .contentInfo {
+    font-size: 18px; /* Reduce la letra de 24px */
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Hace que la imagen ocupe todo el ancho del celular */
+  .contentCardInfo .contentImg,
+  .contentCardInfo img {
+    width: 100%;
+    height: 250px; /* Altura fija para que no quede gigante hacia abajo */
+  }
+
+
+  /* --- 3. SECCIÓN CONTACTOS --- */
+  .grid-view-contact {
+    display: grid;
+    /* Cambia las 3 columnas fijas de 300px por una sola columna */
+    grid-template-columns: 1fr;
+    padding-inline: 20px;
+  }
+
+  .cardContact {
+    height: auto; /* Permite que crezca según el texto */
+    padding: 30px 20px; /* Reduce el relleno de 50px */
+  }
+
+
+  /* --- 4. SECCIÓN ACERCA DE --- */
+  .contentInfoAcercade {
+    width: 90%; /* Pasa de 60% a 90% para aprovechar el espacio del celular */
+    height: auto; /* Evita que el texto se desborde */
+    padding: 30px 20px; /* Reduce el relleno lateral de 90px */
+    gap: 25px;
+    text-align: center;
+  }
+
+  .contentsocialred {
+    flex-wrap: wrap; /* Si no caben las redes sociales en una línea, bajan */
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+
+
